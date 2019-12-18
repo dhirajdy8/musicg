@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I have no answer for that.</template>
+  </category>
+  <category>
+		<pattern>
+			WHAT IS *
+		</pattern>
+		<template>
+		    <think><set name = "subject"><star/></set></think>
+		     <condition name="subject">
+				<li value="IP">The full form of <star /> is <srai><star /></srai> You can type IPTV or VoIP to know more</li>
+				<li value="VOIP">The full form of <star /> is <srai><star /></srai> You can type IPTV or IP to know more</li>
+				<li value="IPTV">The full form of <star /> is <srai><star /></srai> You can type VOIP or IP to know more</li>
+				<li value="UST">The full form of <star /> is <srai><star /></srai> To know more about AST|CST|TCT|ULT Please enter keyword</li>
+				<li value="AST">The full form of <star /> is <srai><star /></srai> To know more about UST|CST|TCT|ULT Please enter keyword</li>
+				<li value="CST">The full form of <star /> is <srai><star /></srai> To know more about AST|UST|TCT|ULT Please enter keyword</li>
+				<li value="TCT">The full form of <star /> is <srai><star /></srai> To know more about AST|CST|UST|ULT Please enter keyword</li>
+				<li value="ULT">The full form of <star /> is <srai><star /></srai> To know more about AST|CST|TCT|UST Please enter keyword <![CDATA[<b>Hi..This is the testing pattern.</b> <br/> How are u doing<a>https://www.google.com/</a> <br/>]]></li>
+				<li><srai><star /></srai></li>
+		    </condition>
+		</template>
+	</category>
+	<category>
+		<pattern>
+			EXPAND *
+		</pattern>
+		<template>
+			<srai>
+				WHAT IS
+				<star />
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>
+			FULLFORM OF *
+		</pattern>
+		<template>
+			<srai>
+				WHAT IS
+				<star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>
+			CAN YOU TELL ME THE FULLFORM OF *
+		</pattern>
+		<template>
+			<srai>
+				WHAT IS
+				<star index="1"/>
+			</srai>
+		</template>
+	</category>
+	<!--  -->
+	<category>
+		<pattern>
+			IP
+		</pattern>
+		<template>
+			Internet Protocol
+		</template>
+	</category>
+	<category>
+		<pattern>
+			TOS
+		</pattern>
+		<template>
+			Terms of Service
+		</template>
+	</category>
+	<category>
+		<pattern>
+			VOIP
+		</pattern>
+		<template>
+			Voice Over Internet Protocol
+		</template>
+	</category>
+	<category>
+		<pattern>
+			HSIA
+		</pattern>
+		<template>
+			High Speed Internet Access
+		</template>
+	</category>
+	<category>
+		<pattern>
+			IPTV
+		</pattern>
+		<template>
+			Internet Protocol Television
+		</template>
+	</category>
+	<category>
+		<pattern>
+			RWD
+		</pattern>
+		<template>
+			Responsive Web Design
+		</template>
+	</category>
+	<category>
+		<pattern>
+			IDM
+		</pattern>
+		<template>
+			Iedntity Management system
+		</template>
+	</category>
+	<category>
+		<pattern>
+			MPS SS
+		</pattern>
+		<template>
+			Member Profile System Subscriptions  Services
+		</template>
+	</category>
+	<category>
+		<pattern>
+			MPSYS
+		</pattern>
+		<template>
+			Member Profile System
+		</template>
+	</category>
+	<category>
+		<pattern>
+			MPS LDAP
+		</pattern>
+		<template>
+			Member Profile System Light Weight Directory Acesss Protocol
+		</template>
+	</category>
+
+</aiml>
